@@ -57,12 +57,12 @@
         <article use:reveal={{ delay: 150 }} class="flex min-h-44 flex-col justify-between border border-slate-200/80 bg-white/75 p-6 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/[0.05]">
           <div>
             <p class="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-700 dark:text-violet-300">{project[1]}</p>
-            <h2 class="mt-4 text-3xl font-bold">{project[0]}</h2>
+            <h2 class="mt-4 text-3xl font-bold dark:text-white">{project[0]}</h2>
             <p class="mt-3 leading-7 text-slate-600 dark:text-slate-300">{project[2]}</p>
           </div>
 
           {#if project[3]}
-            <a class="mt-6 w-fit border-b border-slate-950 pb-1 text-sm font-semibold dark:border-white" href={project[3]} target="_blank" rel="noreferrer">
+            <a class="mt-6 w-fit border-b border-slate-950 pb-1 text-sm font-semibold dark:text-white dark:border-white" href={project[3]} target="_blank" rel="noreferrer">
               View repo
             </a>
           {/if}

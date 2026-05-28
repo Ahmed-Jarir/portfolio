@@ -14,7 +14,7 @@
       ]
     ],
     [
-      'Full Stack Developer',
+      'Software Developer',
       'MaxFlow',
       'Jul 2024 - Nov 2025',
       'ERP modules and mobile applications.',
