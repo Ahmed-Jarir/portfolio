@@ -59,7 +59,7 @@
 
         <div>
           <p class="text-sm font-semibold text-cyan-700 dark:text-violet-300">{exp[1]} / {exp[2]}</p>
-          <h2 class="mt-1 text-2xl font-bold">{exp[0]}</h2>
+          <h2 class="mt-1 text-2xl font-bold dark:text-white">{exp[0]}</h2>
           <p class="mt-2 text-slate-600 dark:text-slate-300">{exp[3]}</p>
         </div>
 
