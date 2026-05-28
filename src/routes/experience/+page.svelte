@@ -52,11 +52,7 @@
 
   <div class="grid gap-4">
     {#each experiences as exp, index}
-      <article use:reveal={{ delay: index * 90 }} class="group grid gap-5 border border-slate-200/80 bg-white/70 p-5 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/[0.05] md:grid-cols-[7rem_1fr_auto] md:items-center">
-        <div class="text-6xl font-black leading-none text-slate-200 group-hover:text-transparent group-hover:bg-gradient-to-br group-hover:from-blue-600 group-hover:to-cyan-500 group-hover:bg-clip-text dark:text-white/10 dark:group-hover:from-violet-400 dark:group-hover:to-pink-400">
-          {String(index + 1).padStart(2, '0')}
-        </div>
-
+      <article use:reveal={{ delay: index * 90 }} class="group grid gap-5 border border-slate-200/80 bg-white/70 p-5 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/[0.05] md:grid-cols-[1fr_auto] md:items-center">
         <div>
           <p class="text-sm font-semibold text-cyan-700 dark:text-violet-300">{exp[1]} / {exp[2]}</p>
           <h2 class="mt-1 text-2xl font-bold dark:text-white">{exp[0]}</h2>
