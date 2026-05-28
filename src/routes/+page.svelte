@@ -7,7 +7,7 @@
   import ProjectsPage from './projects/+page.svelte';
   import SkillsPage from './skills/+page.svelte';
 </script>
-<section class="relative flex justify-center items-center min-h-screen">
+<section class="relative flex min-h-screen items-center justify-center overflow-x-clip">
   <!-- Decorative Blobs -->
   <div class="absolute inset-0 overflow-hidden">
     <div class="absolute bottom-20 right-10 w-96 h-96
@@ -25,26 +25,28 @@
   </div>
   <!--End Decorative Blobs -->
 
-  <div class="relative container mx-auto px-4 sm:px-6 lg:px-12 py-20">
+  <div class="relative container mx-auto px-4 py-16 sm:px-6 sm:py-20 lg:px-12">
 
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
+    <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
       <GeneralInfo/>
-      <CodeBlock/>
+      <div class="hidden lg:block">
+        <CodeBlock/>
+      </div>
     </div>
   </div>
 </section>
-<section id="about" class="relative scroll-mt-24 px-6 py-28 sm:px-8 lg:px-10">
+<section id="about" class="relative scroll-mt-24 px-4 py-20 sm:px-8 sm:py-24 lg:px-10 lg:py-28">
   <AboutPage/>
 </section>
-<section id="experience" class="relative scroll-mt-24 px-6 py-28 sm:px-8 lg:px-10">
+<section id="experience" class="relative scroll-mt-24 px-4 py-20 sm:px-8 sm:py-24 lg:px-10 lg:py-28">
   <ExperiencePage/>
 </section>
-<section id="projects" class="relative scroll-mt-24 px-6 py-28 sm:px-8 lg:px-10">
+<section id="projects" class="relative scroll-mt-24 px-4 py-20 sm:px-8 sm:py-24 lg:px-10 lg:py-28">
   <ProjectsPage/>
 </section>
-<section id="skills" class="relative scroll-mt-24 px-6 py-28 sm:px-8 lg:px-10">
+<section id="skills" class="relative scroll-mt-24 px-4 py-20 sm:px-8 sm:py-24 lg:px-10 lg:py-28">
   <SkillsPage/>
 </section>
-<section id="contact" class="relative scroll-mt-24 px-6 pb-10 pt-20 sm:px-8 lg:px-10">
+<section id="contact" class="relative scroll-mt-24 px-4 pb-10 pt-16 sm:px-8 sm:pt-20 lg:px-10">
   <ContactPage/>
 </section>

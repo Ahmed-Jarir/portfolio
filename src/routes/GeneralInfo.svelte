@@ -7,7 +7,7 @@
 </script>
 <div class="space-y-6 sm:space-y-8">
   <div class="space-y-4">
-    <div class="flex gap-8">
+    <div class="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-center sm:gap-8 sm:text-left">
       <div class="relative">
         <!-- background -->
         <div class="absolute inset-0 
@@ -15,13 +15,13 @@
                     dark:from-violet-500 dark:via-purple-500 dark:to-pink-500 
                     rounded-full blur-xl opacity-70"></div>
         <!-- image container and placeholder -->
-        <div class="h-[224px] w-[224px]
+        <div class="h-40 w-40 sm:h-[224px] sm:w-[224px]
                     border-6 shadow-xl relative
                     rounded-full bg-white"></div>
       </div>
       <!-- Name -->
       <div style="opacity: 1; transform: none">
-        <h1 class="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight">
+        <h1 class="text-5xl font-black tracking-tight sm:text-7xl lg:text-8xl">
           <span class="
             bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 
             dark:from-violet-600 dark:via-purple-600 dark:to-pink-600
@@ -30,7 +30,8 @@
             Ahmed
           </span>
         </h1>
-        <h1 class="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight
+        <h1 class="text-5xl font-black tracking-tight
+                   sm:text-7xl lg:text-8xl
                    text-slate-900 dark:text-white">
           Jarir
         </h1>
@@ -38,22 +39,22 @@
       <!-- End name -->
     </div>
     <!-- Title -->
-    <div class="flex items-center gap-3">
+    <div class="flex flex-col items-center gap-3 sm:flex-row">
 
       <!-- Decorative divider -->
       <div class="h-1 w-20 bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-violet-600 dark:to-purple-600 rounded-full"></div>
-      <div class="text-xl sm:text-2xl font-semibold text-slate-600 dark:text-slate-400">
+      <div class="text-center text-lg font-semibold text-slate-600 dark:text-slate-400 sm:text-left sm:text-2xl">
         System Administrator
       </div>
     </div>
     <!-- End title -->
   </div>
   <!-- Buttons -->
-  <div class="flex gap-4">
-    <a class="btn-default rounded-[0.5rem] text-white font-bold px-5 py-2.5" href="#contact">Get In Touch</a>
+  <div class="flex flex-col gap-3 sm:flex-row sm:gap-4">
+    <a class="btn-default rounded-[0.5rem] px-5 py-3 text-center font-bold text-white" href="#contact">Get In Touch</a>
     <a class="bg-none text-slate-500 border-2 border-slate-300
-              dark:border-white/30 hover:bg-white dark:hover:bg-black/20 
-              font-bold px-5 py-2.5 rounded-[0.5rem]"
+              dark:border-white/30 hover:bg-white dark:hover:bg-black/20
+              rounded-[0.5rem] px-5 py-3 text-center font-bold"
        href="#projects"
     >
       View Projects
@@ -61,11 +62,11 @@
   </div>
   <!--End buttons -->
   <!-- Contact -->
-  <div class="flex gap-4 items-center">
+  <div class="flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
     <div class="text-sm text-slate-500 dark:text-slate-500">
       Links:
     </div>
-    <div class="flex gap-2">
+    <div class="flex flex-wrap justify-center gap-2 sm:justify-start">
       <a class="a-social bg-gradient-to-br from-slate-700 to-slate-900
                 dark:from-slate-700 dark:to-slate-900"
          href="https://github.com/ahmed-jarir">
