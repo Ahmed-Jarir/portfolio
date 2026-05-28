@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@plugin 'flowbite/plugin';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source "../node_modules/flowbite-svelte/dist";
+@source "../node_modules/flowbite-svelte-icons/dist";
+
+@layer components {
+  .a-social {
+    @apply w-12 h-12 rounded-xl flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-shadow;
+  }
+  .btn-default {
+    @apply bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 dark:from-violet-600 dark:via-purple-600 dark:to-pink-600;
+  }
+  .selected-tab {
+    @apply bg-gradient-to-r from-blue-600/20 to-cyan-600/20 dark:from-violet-600/20 dark:to-purple-600/20;
+  }
+}
+/* Add this to your global tailwind.css / app.css */
+pre.shiki {
+  background-color: transparent !important;
+}
+
+pre.shiki span {
+  color: var(--shiki-light);
+}
+
+.dark pre.shiki span {
+  color: var(--shiki-dark) !important;
+}
